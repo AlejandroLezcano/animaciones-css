@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Text Animations</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 text-center column-animable">
+				<h1 class="animate__animated" id="animable">
+					Animación
+				</h1>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center column-buttons">
+				<div>
+					<h2><strong>Attention Seekers</strong></h2>
+				
+					<button type="button" id="bounce" class="boton">Bounce</button>
+				
+					<button type="button" id="flash" class="boton">Flash</button>
+				
+					<button type="button" id="pulse" class="boton">Pulse</button>
+
+					<button type="button" id="rubberBand" class="boton">rubberBand</button>
+
+					<button type="button" id="shakeX" class="boton">shakeX</button>
+
+					<button type="button" id="shakeY" class="boton">shakeY</button>
+
+					<button type="button" id="headShake" class="boton">headShake</button>
+
+					<button type="button" id="swing" class="boton">swing</button>
+
+					<button type="button" id="tada" class="boton">tada</button>
+
+					<button type="button" id="wobble" class="boton">wobble</button>
+
+					<button type="button" id="jello" class="boton">jello</button>
+
+					<button type="button" id="heartBeat" class="boton">heartBeat</button>
+				</div>
+					
+				<div>
+					<h2><strong>Back Entrances</strong></h2>
+				
+					<button type="button" id="backInDown" class="boton">backInDown</button>
+					
+					<button type="button" id="backInLeft" class="boton">backInLeft</button>
+
+					<button type="button" id="backInRight" class="boton">backInRight</button>
+
+					<button type="button" id="backInUp" class="boton">backInUp</button>
+
+				</div>
+
+				<div>
+					<h2><strong>Back Exits</strong></h2>
+
+					<button type="button" id="backOutDown" class="boton">backOutDown</button>
+
+					<button type="button" id="backOutLeft" class="boton">backOutLeft</button>
+
+					<button type="button" id="backOutRight" class="boton">backOutRight</button>
+
+					<button type="button" id="backOutUp" class="boton">backOutUp</button>
+
+				</div>
+
+				<div>
+					<h2><strong>Bouncing Entrances</strong></h2>
+
+					<button type="button" id="bounceIn" class="boton">bounceIn</button>
+
+					<button type="button" id="bounceInDown" class="boton">bounceInDown</button>
+
+					<button type="button" id="bounceInLeft" class="boton">bounceInLeft</button>
+
+					<button type="button" id="bounceInRight" class="boton">bounceInRight</button>
+
+					<button type="button" id="bounceInUp" class="boton">bounceInUp</button>
+
+
+				</div>
+
+				<div>
+					<h2><strong>Bouncing Exits</strong></h2>
+
+					<button type="button" id="bounceOut" class="boton">bounceOut</button>
+
+					<button type="button" id="bounceOutDown" class="boton">bounceOutDown</button>
+
+					<button type="button" id="bounceOutLeft" class="boton">bounceOutLeft</button>
+
+					<button type="button" id="bounceOutRight" class="boton">bounceOutRight</button>
+
+					<button type="button" id="bounceOutUp" class="boton">bounceOutUp</button>
+
+				</div>
+
+				<div>
+					<h2><strong>Fading Entrances</strong></h2>
+
+					<button type="button" id="fadeIn" class="boton">fadeIn</button>
+
+					<button type="button" id="fadeInDown" class="boton">fadeInDown</button>
+
+					<button type="button" id="fadeInDownBig" class="boton">fadeInDownBig</button>
+
+					<button type="button" id="fadeInLeft" class="boton">fadeInLeft</button>
+
+					<button type="button" id="fadeInLeftBig" class="boton">fadeInLeftBig</button>
+
+					<button type="button" id="fadeInRight" class="boton">fadeInRight</button>
+
+					<button type="button" id="fadeInRightBig" class="boton">fadeInRightBig</button>
+
+					<button type="button" id="fadeInUp" class="boton">fadeInUp</button>
+
+					<button type="button" id="fadeInUpBig" class="boton">fadeInUpBig</button>
+
+					<button type="button" id="fadeInTopRight" class="boton">fadeInTopRight</button>
+
+					<button type="button" id="fadeInTopLeft" class="boton">fadeInTopLeft</button>
+
+					<button type="button" id="fadeInBottomLeft" class="boton">fadeInBottomLeft</button>
+
+					<button type="button" id="fadeInBottomRight" class="boton">fadeInBottomRight</button>
+
+
+				</div>
+
+				<div>
+					<h2><strong>Fading Exits</strong></h2>
+
+					<button type="button" id="fadeOut" class="boton">fadeOut</button>
+
+					<button type="button" id="fadeOutDown" class="boton">fadeOutDown</button>
+
+					<button type="button" id="fadeOutDownBig" class="boton">fadeOutDownBig</button>
+
+					<button type="button" id="fadeOutLeft" class="boton">fadeOutLeft</button>
+
+					<button type="button" id="fadeOutLeftBig" class="boton">fadeOutLeftBig</button>
+
+					<button type="button" id="fadeOutRight" class="boton">fadeOutRight</button>
+
+					<button type="button" id="fadeOutRightBig" class="boton">fadeOutRightBig</button>
+
+					<button type="button" id="fadeOutUp" class="boton">fadeOutUp</button>
+
+					<button type="button" id="fadeOutUpBig" class="boton">fadeOutUpBig</button>
+
+					<button type="button" id="fadeOutTopLeft" class="boton">fadeOutTopLeft</button>
+
+					<button type="button" id="fadeOutTopRight" class="boton">fadeOutTopRight</button>
+
+					<button type="button" id="fadeOutBottomRight" class="boton">fadeOutBottomRight</button>
+
+					<button type="button" id="fadeOutBottomLeft" class="boton">fadeOutBottomLeft</button>
+
+					
+				</div>
+
+
+				<div>
+					<h2><strong>Flippers</strong></h2>
+
+					<button type="button" id="flip" class="boton">flip</button>
+
+					<button type="button" id="flipInX" class="boton">flipInX</button>
+
+					<button type="button" id="flipOutX" class="boton">flipOutX</button>
+
+					<button type="button" id="flipOutY" class="boton">flipOutY</button>
+					
+				</div>
+
+				<div>
+					<h2><strong>Lightspeed</strong></h2>
+
+					<button type="button" id="lightSpeedInRight" class="boton">lightSpeedInRight</button>
+
+					<button type="button" id="lightSpeedInLeft" class="boton">lightSpeedInLeft</button>
+
+					<button type="button" id="lightSpeedOutRight" class="boton">lightSpeedOutRight</button>
+
+					<button type="button" id="lightSpeedOutLeft" class="boton">lightSpeedOutLeft</button>
+					
+				</div>
+
+				<div>
+					<h2><strong>Rotating Entrances</strong></h2>
+
+					<button type="button" id="rotateIn" class="boton">rotateIn</button>
+
+					<button type="button" id="rotateInDownLeft" class="boton">rotateInDownLeft</button>
+
+					<button type="button" id="rotateInDownRight" class="boton">rotateInDownRight</button>
+
+					<button type="button" id="rotateInUpLeft" class="boton">rotateInUpLeft</button>
+
+					<button type="button" id="rotateInUpRight" class="boton">rotateInUpRight</button>
+					
+				</div>
+
+				<div>
+					<h2><strong>Rotating Exits</strong></h2>
+
+					<button type="button" id="rotateOut" class="boton">rotateOut</button>
+
+					<button type="button" id="rotateOutDownLeft" class="boton">rotateOutDownLeft</button>
+
+					<button type="button" id="rotateOutDownRight" class="boton">rotateOutDownRight</button>
+
+					<button type="button" id="rotateOutUpLeft" class="boton">rotateOutUpLeft</button>
+
+					<button type="button" id="rotateOutUpRight" class="boton">rotateOutUpRight</button>
+					
+				</div>
+
+				<div>
+					<h2><strong>Specials</strong></h2>
+
+					<button type="button" id="hinge" class="boton">hinge</button>
+
+					<button type="button" id="jackInTheBox" class="boton">jackInTheBox</button>
+
+					<button type="button" id="rollIn" class="boton">rollIn</button>
+
+					<button type="button" id="rollOut" class="boton">rollOut</button>
+					
+				</div>
+
+
+				<div>
+					<h2><strong>Zooming Entrances</strong></h2>
+
+					<button type="button" id="zoomIn" class="boton">zoomIn</button>
+
+					<button type="button" id="zoomInDown" class="boton">zoomInDown</button>
+
+					<button type="button" id="zoomInLeft" class="boton">zoomInLeft</button>
+
+					<button type="button" id="zoomInRight" class="boton">zoomInRight</button>
+
+					<button type="button" id="zoomInUp" class="boton">zoomInUp</button>
+
+					
+				</div>
+
+				<div>
+					<h2><strong>Zooming Exits</strong></h2>
+
+					<button type="button" id="zoomOut" class="boton">zoomOut</button>
+
+					<button type="button" id="zoomOutDown" class="boton">zoomOutDown</button>
+
+					<button type="button" id="zoomOutLeft" class="boton">zoomOutLeft</button>
+
+					<button type="button" id="zoomOutRight" class="boton">zoomOutRight</button>
+
+					<button type="button" id="zoomOutUp" class="boton">zoomOutUp</button>
+
+					
+				</div>
+
+				<div>
+					<h2><strong>Sliding Entrances</strong></h2>
+
+					<button type="button" id="slideInDown" class="boton">slideInDown</button>
+
+					<button type="button" id="slideInLeft" class="boton">slideInLeft</button>
+
+					<button type="button" id="slideInRight" class="boton">slideInRight</button>
+
+					<button type="button" id="slideInUp" class="boton">slideInUp</button>
+
+					
+				</div>
+
+				<div>
+					<h2><strong>Sliding Exits</strong></h2>
+
+					<button type="button" id="slideOutDown" class="boton">slideOutDown</button>
+
+					<button type="button" id="slideOutLeft" class="boton">slideOutLeft</button>
+
+					<button type="button" id="slideOutRight" class="boton">slideOutRight</button>
+
+					<button type="button" id="slideOutUp" class="boton">slideOutUp</button>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
